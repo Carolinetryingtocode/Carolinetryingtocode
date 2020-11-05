@@ -257,7 +257,6 @@ time {
   visibility: visible;
   opacity: 1;
 }
-`````css
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -396,11 +395,12 @@ textarea {
     left: -289px;
     /*250+45-6*/
   }
+  .contact {
+    margin: 30px;
+    width: unset;
+  }
 }
-.contact {
-  margin: 30px;
-  width: unset;
-}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 46px;
@@ -423,15 +423,16 @@ textarea {
     border-width: 8px 16px 8px 0;
     border-color: transparent rgba(18, 157, 175, 0.8) transparent transparent;
   }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .form-group:first-of-type {
+    margin-right: 0;
+  }
 }
-form {
-  display: flex;
-  flex-direction: column;
-}
-.row {
-  flex-direction: column;
-}
-.form-group:first-of-type {
-  margin-right: 0;
-}
+
 
